@@ -1,0 +1,6 @@
+.bg-custom-image {
+    background-image: url('../../public/Imagens/Img-energia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

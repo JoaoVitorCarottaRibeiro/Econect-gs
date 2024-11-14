@@ -16,7 +16,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home 
+          titulo="Bem-vindos a Econect"
+          subtitulo="Venha conhecer nossos serviços e nossa simulação com IA"
+        />
       },
       {
         path: "/sobre",
