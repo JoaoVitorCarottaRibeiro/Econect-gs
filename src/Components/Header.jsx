@@ -7,7 +7,7 @@ export default function Header() {
       <div className="flex items-center justify-center w-full max-w-7xl space-x-8">
         
         <div className="flex items-center space-x-2">
-          <img className="w-28 h-auto mr-36" src={Econect} alt="Logo Econect" />
+          <Link to="/"><img className="w-28 h-auto mr-36" src={Econect} alt="Logo Econect" /></Link>
         </div>
 
         <div className="text-lg flex space-x-8 text-gray-800">

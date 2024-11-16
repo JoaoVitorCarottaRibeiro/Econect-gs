@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { calcularValor } from '../services/api';  // Certifique-se de que o caminho está correto
+import { calcularValor } from '../services/api';
 
 function Simulacao() {
   const [consumo, setConsumo] = useState(0);
@@ -13,13 +13,13 @@ function Simulacao() {
       setResultado(null);
       return;
     }
-
+  
     try {
       console.log(`Enviando para a API: consumo = ${consumo}, tipoEnergia = ${tipoEnergia}`);
       const data = await calcularValor(consumo, tipoEnergia);
-
-      console.log('Resposta da API:', data);  // Adiciona um log aqui para ver a resposta da API
-
+  
+      console.log('Resposta da API:', data);
+  
       if (data && data.valor_total) {
         setResultado(data.valor_total);
         setErro('');
@@ -28,11 +28,12 @@ function Simulacao() {
         setResultado(null);
       }
     } catch (error) {
-      console.error('Erro no cálculo:', error);  // Log de erro completo
+      // Log detalhado do erro
+      console.error('Erro no cálculo:', error.response ? error.response.data : error.message);
       setErro("Erro ao calcular o valor.");
       setResultado(null);
     }
-  };
+  };  
 
   return (
     <div>

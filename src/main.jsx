@@ -8,6 +8,7 @@ import Sobre from './pages/Sobre.jsx'
 import Simulacao from './pages/Simulacao.jsx'
 import Servicos from './pages/Servicos.jsx'
 import Contato from './pages/Contato.jsx'
+import Topicos from './Components/Topicos.jsx'
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/contato",
         element: <Contato />
+      },
+      {
+        path:"/topicos",
+        element: <Topicos />
       }
     ]
   }

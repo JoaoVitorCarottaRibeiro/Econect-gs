@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
-        <footer className="bg-zinc-950 text-white pt-24">
+        <footer className="bg-[#222222] text-white pt-24">
             <div className="max-w-6xl mx-auto px-4 py-24 grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left">
                 <div className="flex flex-col items-center md:items-start space-y-1">
                     <img src={Econect} alt="Econnect Logo" className="w-48 mb-1" />
