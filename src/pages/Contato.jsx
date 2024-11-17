@@ -4,6 +4,7 @@ export default function Contato() {
     return (
         <section className="bg-green-50 flex justify-center items-center py-12">
             <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center lg:items-start gap-10">
+                {/* Formulário */}
                 <div className="flex-1">
                     <h3 className="text-green-500 font-bold uppercase text-sm">Contate a gente</h3>
                     <h1 className="text-2xl font-bold text-gray-800 mt-2">
@@ -37,7 +38,7 @@ export default function Contato() {
                         <textarea
                             placeholder="Mensagem"
                             rows="5"
-                            className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+                            className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500 h-[150px] resize-none"
                         ></textarea>
                         <button
                             type="submit"
@@ -47,6 +48,7 @@ export default function Contato() {
                         </button>
                     </form>
                 </div>
+                {/* Imagem */}
                 <div className="flex-1 flex justify-center">
                     <img
                         src={image}
