@@ -1,6 +1,9 @@
 import { useParams } from "react-router-dom";
-
+import { useEffect } from 'react';
 export default function Conhecimento() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const { id } = useParams();
 
     const texto1 = "A energia limpa é uma fonte de energia obtida de recursos naturais que não emitem poluentes na geração de eletricidade ou calor. Exemplos incluem energia solar, eólica e hidráulica. Essas fontes são renováveis, ou seja, são praticamente inesgotáveis e têm um impacto ambiental muito menor em comparação às fontes tradicionais, como petróleo e carvão. Utilizar energia limpa é fundamental para reduzir as emissões de gases de efeito estufa e combater as mudanças climáticas. Além disso, essas tecnologias ajudam a promover a sustentabilidade, diversificar as matrizes energéticas e reduzir a dependência de combustíveis fósseis. Ao optar por energias limpas, não apenas contribuímos para um planeta mais saudável, mas também promovemos inovações tecnológicas e criamos oportunidades econômicas em setores como engenharia ambiental e energias renováveis. O futuro sustentável começa com escolhas conscientes hoje!"

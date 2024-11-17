@@ -1,4 +1,8 @@
+import { useEffect } from 'react';
 export default function ContainerValores({numero, texto}) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
                 <div class="w-72 h-[400px] rounded-lg bg-white shadow-xl">

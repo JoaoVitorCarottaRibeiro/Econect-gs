@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
-
+import { useEffect } from 'react';
 export default function ContainerHome({ titulo1, texto1, imagem1, titulo2, texto2, imagem2 }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <div className="flex items-center justify-center gap-[70px] cursor-pointer">

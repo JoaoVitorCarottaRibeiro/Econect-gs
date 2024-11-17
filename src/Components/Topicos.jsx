@@ -1,8 +1,12 @@
 import imagem1 from "../../public/Imagens/Img1-topico.jpg"
 import imagem2 from "../../public/Imagens/Img2-topico.jpg"
 import imagem3 from "../../public/Imagens/Img3-topico.jpg"
+import { useEffect } from 'react';
 
 export default function Topicos(){
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return(
         <>
             <h1 className="text-3xl text-center text-[#44D764] py-6 font-bold">Fazendas de ventos para uma proteção a natureza</h1>

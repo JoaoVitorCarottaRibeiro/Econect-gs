@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
-
+import { useEffect } from 'react';
 export default function ContainerTopicos({ imagemT, titulo, texto, botao }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <div className="mb-10">
@@ -14,3 +17,4 @@ export default function ContainerTopicos({ imagemT, titulo, texto, botao }) {
         </>
     );
 }
+
