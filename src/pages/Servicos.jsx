@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+import imagem1 from '../../public/Imagens/testi-img.png'
+import imagem2 from '../../public/Imagens/testi-img2.png'
+import imagem3 from '../../public/Imagens/testi-img3.png'
 
 const cardData = [
   {
@@ -63,51 +65,52 @@ const plansData = [
 
 const avaliacaoData = [
   {
-    image: "",
-    name: "Pramasha",
+    image: imagem1,
+    name: "Sabrina",
     role: "Design",
-    quote: "Eu adoraria elogiar o trabalho colaborativo com nossa equipe...",
+    quote: "Contribui com um design atraente e funcional, destacando os valores de inovação e sustentabilidade da Econect. Sua colaboração melhora a experiência do usuário e a comunicação visual.",
   },
   {
-    image: "",
+    image: imagem2,
     name: "Carlos",
     role: "Desenvolvedor",
-    quote: "A Econect nos ajudou a crescer de forma sustentável...",
+    quote: "A Econect valoriza a tecnologia aplicada, como a simulação de consumo de energia via IA, que oferece soluções práticas e personalizadas aos clientes, reforçando o diferencial tecnológico da Econect.",
   },
   {
-    image: "",
+    image: imagem3,
     name: "Ana",
     role: "Gerente de Projetos",
-    quote: "Uma experiência maravilhosa com resultados incríveis...",
+    quote: "Uma experiência maravilhosa com resultados incríveis. A Econect foca na execução eficiente de programas institucionais e sociais, garantindo impacto positivo e fortalecendo a confiabilidade da Econect como parceira sustentável.",
   },
 ];
 
 // secao1
 
 function Secaocards({ card }) {
-    return (
-      <div className="text-center py-16 bg-green-50">
-        <h2 className="text-3xl font-bold mb-4">Our Awesome Service</h2>
-        <p className="text-gray-600 max-w-xl mx-auto mb-12">
-          Nullam eu nibh vitae est tempor molestie d sed Quisque dignissim maximus ipsumsed rutrum metus tincidunt Sedget tincidunt ipsum dignissim maximus ipsum, sed rutrum
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-          {card.slice(0, 4).map((item, index) => (
-            <div
-              key={index}
-              className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-gray-800"
-            >
-              <div className="bg-green-100 p-4 rounded-full mb-4">
-                <div className="text-4xl text-green-500">{item.icon}</div>
-              </div>
-              <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-sm text-center">{item.description}</p>
+  return (
+    <div className="text-center py-16 bg-green-50">
+      <h2 className="text-3xl font-bold mb-4">Nossos Serviços Incríveis</h2>
+      <p className="text-gray-600 max-w-xl mx-auto mb-12">
+        Conheça nossas soluções que podem transformar seu negócio, garantindo inovação, impacto positivo e crescimento sustentável. Trabalhamos para oferecer o melhor para você.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        {card.slice(0, 4).map((item, index) => (
+          <div
+            key={index}
+            className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-gray-800"
+          >
+            <div className="bg-green-100 p-4 rounded-full mb-4">
+              <div className="text-4xl text-green-500">{item.icon}</div>
             </div>
-          ))}
-        </div>
+            <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+            <p className="text-gray-600 text-sm text-center">{item.description}</p>
+          </div>
+        ))}
       </div>
-    );
-  }
+    </div>
+  );
+}
+
   
   
   
@@ -175,7 +178,7 @@ function Avaliacao({ avaliacao }) {
           <img
             src={currentAvaliacao.image}
             alt={currentAvaliacao.name}
-            className="w-36 h-36 rounded-full border-4 border-white shadow-lg"
+            className="w-auto h-auto rounded-full border-4 border-white shadow-lg"
           />
           <blockquote className="text-xl italic text-gray-700 mt-4">
             "{currentAvaliacao.quote}"
