@@ -1,0 +1,25 @@
+import { useParams } from "react-router-dom";
+
+export default function Conhecimento() {
+    const { id } = useParams();
+
+    const texto1 = "A energia limpa é uma fonte de energia obtida de recursos naturais que não emitem poluentes na geração de eletricidade ou calor. Exemplos incluem energia solar, eólica e hidráulica. Essas fontes são renováveis, ou seja, são praticamente inesgotáveis e têm um impacto ambiental muito menor em comparação às fontes tradicionais, como petróleo e carvão. Utilizar energia limpa é fundamental para reduzir as emissões de gases de efeito estufa e combater as mudanças climáticas. Além disso, essas tecnologias ajudam a promover a sustentabilidade, diversificar as matrizes energéticas e reduzir a dependência de combustíveis fósseis. Ao optar por energias limpas, não apenas contribuímos para um planeta mais saudável, mas também promovemos inovações tecnológicas e criamos oportunidades econômicas em setores como engenharia ambiental e energias renováveis. O futuro sustentável começa com escolhas conscientes hoje!"
+
+    const texto2 = "Com os avanços tecnológicos, a produção de energia limpa tem se tornado cada vez mais eficiente e acessível. Energias limpas, como solar, eólica e hidráulica, são obtidas de fontes renováveis que têm baixo impacto ambiental e contribuem significativamente para a redução das emissões de gases de efeito estufa. A tecnologia desempenha um papel essencial nesse progresso, permitindo o desenvolvimento de painéis solares mais eficientes, turbinas eólicas mais potentes e sistemas de armazenamento de energia mais duráveis. Essas inovações tornam as energias limpas mais viáveis para atender à crescente demanda global por eletricidade de forma sustentável. Investir em energia limpa é um passo crucial para combater as mudanças climáticas e construir um futuro mais sustentável. Além de proteger o meio ambiente, essas soluções impulsionam o crescimento econômico, criam empregos e melhoram a qualidade de vida."
+
+    const tituloMissoes = id === "1" ? "Conhecimento" : "Inovações tecnológicas";
+    const imagensMissoes = id === "1" ? "../../public/Imagens/img-missoes2.jpg" : "../../public/Imagens/img-missoes3.png";
+    const textoMissoes = id === "1" ? texto1 : texto2
+
+    return (
+        <>
+            <h1 className="text-3xl font-bold text-center py-7 text-[#44D764]">
+                {tituloMissoes}
+            </h1>
+            <div className="flex justify-center gap-20 items-center py-10">
+                <img className="w-[500px] h-[400px] rounded-xl" src={imagensMissoes}/>
+                <p className="w-[500px] text-md">{textoMissoes}</p>
+            </div>
+        </>    
+    );
+}
