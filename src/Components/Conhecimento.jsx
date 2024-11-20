@@ -12,17 +12,17 @@ export default function Conhecimento() {
 
     const tituloMissoes = id === "1" ? "Conhecimento" : "Inovações tecnológicas";
     const imagensMissoes = id === "1" ? "../../public/Imagens/img-missoes2.jpg" : "../../public/Imagens/img-missoes3.png";
-    const textoMissoes = id === "1" ? texto1 : texto2
+    const textoMissoes = id === "1" ? texto1 : texto2;
 
     return (
         <>
-            <h1 className="text-3xl font-bold text-center py-7 text-[#44D764]">
+            <h1 className="text-2xl md:text-3xl font-bold text-center py-7 text-[#44D764]">
                 {tituloMissoes}
             </h1>
-            <div className="flex justify-center gap-20 items-center py-10">
-                <img className="w-[500px] h-[400px] rounded-xl" src={imagensMissoes}/>
-                <p className="w-[500px] text-md">{textoMissoes}</p>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-10 py-10">
+                <img className="w-full max-w-[410px] h-auto rounded-xl " src={imagensMissoes} alt={tituloMissoes} />
+                <p className="text-sm md:text-md max-w-[500px] mx-10">{textoMissoes}</p>
             </div>
-        </>    
+        </>
     );
 }

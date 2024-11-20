@@ -2,7 +2,7 @@ import image from '../../public/Imagens/image.png';
 
 export default function Contato() {
     return (
-        <section className="bg-green-50 flex justify-center items-center py-12">
+        <section className="bg-green-50 flex justify-center items-center py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center lg:items-start gap-10">
                 <div className="flex-1">
                     <h3 className="text-green-500 font-bold uppercase text-sm">Contate a gente</h3>
@@ -47,7 +47,7 @@ export default function Contato() {
                         </button>
                     </form>
                 </div>
-                <div className="flex-1 flex justify-center">
+                <div className="flex-1 flex justify-center mt-6 lg:mt-9">
                     <img
                         src={image}
                         alt="mulher-computador"
