@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { calcularValor } from '../services/api';
 
 function Simulacao() {
   const [consumo, setConsumo] = useState(0);
@@ -7,36 +6,39 @@ function Simulacao() {
   const [resultado, setResultado] = useState(null);
   const [erro, setErro] = useState('');
 
-  const handleCalcular = async () => {
+  const handleCalcular = () => {
     if (consumo <= 0) {
       setErro("Não é possível calcular para valores menores ou iguais a zero.");
       setResultado(null);
       return;
     }
 
-    try {
-      console.log(`Enviando para a API: consumo = ${consumo}, tipoEnergia = ${tipoEnergia}`);
-      const data = await calcularValor(consumo, tipoEnergia);
+    const fatores = {
+      Solar: 50.25,
+      Eólica: 55.65,
+      Geotérmica: 60.80,
+      Maremotriz: 70.10,
+      Hidráulica: 58.75,
+    };
 
-      console.log('Resposta da API:', data);
-
-      if (data && data.valor_total) {
-        setResultado(data.valor_total);
-        setErro('');
-      } else {
-        setErro("Erro ao calcular o valor.");
-        setResultado(null);
-      }
-    } catch (error) {
-      console.error('Erro no cálculo:', error.response ? error.response.data : error.message);
-      setErro("Erro ao calcular o valor.");
+    const fator = fatores[tipoEnergia];
+    if (!fator) {
+      setErro("Tipo de energia inválido.");
       setResultado(null);
+      return;
     }
+
+    const valorCalculado = consumo * fator;
+
+    setResultado(valorCalculado);
+    setErro('');
   };
 
   return (
     <>
-      <h1 className='text-3xl  py-10 text-center font-bold'>Previsão de Preço com Base no Consumo <span className='text-[#728678]'>(kW)</span></h1>
+      <h1 className='text-3xl py-10 text-center font-bold'>
+        Previsão de Preço com Base no Consumo <span className='text-[#728678]'>(kW)</span>
+      </h1>
       <div className='flex items-center justify-center gap-10 py-10'>
         <input
           className='w-[250px] border border-black rounded p-1'
@@ -75,3 +77,4 @@ function Simulacao() {
 }
 
 export default Simulacao;
+
