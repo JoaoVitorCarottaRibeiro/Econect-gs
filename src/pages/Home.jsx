@@ -17,29 +17,29 @@ export default function Home({ titulo, subtitulo }) {
                 <ContainerHome
                     titulo1="Conhecimento"
                     texto1="Trazer conhecimento sobre as energias limpas ao nossos clientes é nossa prioridade, clique aqui e saiba mais!"
-                    imagem1="../../public/Imagens/img-missoes2.jpg"
+                    imagem1="/Imagens/img-missoes2.jpg"
                     titulo2="Inovações Tecnológicas"
                     texto2="Com os avanços tecnológicos, podemos melhorar cada vez mais a produção de energia limpa, clique aqui e saiba mais sobre o assunto!"
-                    imagem2="../../public/Imagens/img-missoes3.png"
+                    imagem2="/Imagens/img-missoes3.png"
                 />
             </section>
             <section>
                 <h1 className="font-bold text-2xl md:text-3xl ml-5 py-10 text-center">Tópicos recorrentes</h1>
                 <div className="flex flex-col md:flex-row items-center justify-center md:gap-5">
                     <ContainerTopicos
-                        imagemT="../../public/Imagens/img1-topicos.jpg"
+                        imagemT="/Imagens/img1-topicos.jpg"
                         titulo="Fazendas de ventos para uma proteção à natureza"
                         texto="Cada vez mais, vemos moinhos de ventos para produção de energia, isso se deve principalmente pelo fato de ele ser completamente sustentável..."
                         botao="Continuar lendo"
                     />
                     <ContainerTopicos
-                        imagemT="../../public/Imagens/img2-topicos.jpg"
+                        imagemT="/Imagens/img2-topicos.jpg"
                         titulo="Aquecimento global se torna cada vez mais realidade"
                         texto="Com impactos visíveis no dia a dia e no ambiente ao nosso redor. As temperaturas médias globais aumentam de forma alarmante..."
                         botao="Continuar lendo"
                     />
                     <ContainerTopicos
-                        imagemT="../../public/Imagens/img3-topicos.jpg"
+                        imagemT="/Imagens/img3-topicos.jpg"
                         titulo="Condição dos ares se tornam cada vez piores"
                         texto="Devido às queimadas e outros meios de poluição constante, a condição do ar piorou cerca de 55% nos últimos meses. Especialistas dizem ..."
                         botao="Continuar lendo"
