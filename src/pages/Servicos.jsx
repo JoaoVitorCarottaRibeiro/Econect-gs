@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import imagem1 from '../../public/Imagens/testi-img.png'
 import imagem2 from '../../public/Imagens/testi-img2.png'
 import imagem3 from '../../public/Imagens/testi-img3.png'
+import Avancar from '../../public/Imagens/Avancar.png'
+import Voltar from '../../public/Imagens/Voltar.png'
 
 const cardData = [
   {
@@ -54,7 +56,7 @@ const plansData = [
     title: "Avançado",
     price: "$198",
     card: [
-      "Relatório de consumo em dashboards",
+      "Relatórios em dashboards",
       "Plano de energia solar",
       "Até 3 pessoas",
       "Armazenamento de energia",
@@ -187,12 +189,12 @@ function Avaliacao({ avaliacao }) {
             <p className="font-semibold">{currentAvaliacao.name}</p>
             <p className="text-sm text-green-500">{currentAvaliacao.role}</p>
           </div>
-          <div className="flex mt-8">
-            <button onClick={handlePrev} className="px-4 py-2 bg-white rounded-l-lg">
-              Anterior
+          <div className="flex mt-8 gap-5">
+            <button onClick={handlePrev} className="bg-transparent rounded-l-lg">
+              <img className='w-[50px] h-[50px]' src={Voltar}/>
             </button>
-            <button onClick={handleNext} className="px-4 py-2 bg-white rounded-r-lg">
-              Próximo
+            <button onClick={handleNext} className="bg-transparent rounded-r-lg">
+              <img className='w-[50px] h-[50px]' src={Avancar} />
             </button>
           </div>
         </div>

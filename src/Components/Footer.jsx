@@ -1,10 +1,14 @@
 import Econect from '../../public/Imagens/Econect-sem-fundo.png';
+import Face from '../../public/Imagens/Face-icon.png'
+import Insta from '../../public/Imagens/Insta-icon.png'
+import linkedin from '../../public/Imagens/linkedin-icon.png'
+import YT from '../../public/Imagens/YT-icon.png'
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
         <footer className="bg-[#222222] text-white pt-24">
-            <div className="max-w-6xl mx-auto px-4 py-24 grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left">
+            <div className="max-w-6xl mx-auto px-4  grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left">
                 <div className="flex flex-col items-center md:items-start space-y-1">
                     <img src={Econect} alt="Econnect Logo" className="w-48 mb-1" />
                 </div>
@@ -22,7 +26,7 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg mb-11">Contato</h3>
                     <p className="font-bold">Email</p>
-                    <p>example@gmail.com</p>
+                    <p>EconectServices@gmail.com</p>
                     <p className="font-bold mt-2">Telefone</p>
                     <p>+55 (11) 99999-8888</p>
                 </div>
@@ -30,10 +34,10 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg mb-11">Nos siga</h3>
                     <div className="flex gap-2 justify-center md:justify-start">
-                        <a href=""><img src="" alt="Facebook" className="w-6" /></a>
-                        <a href=""><img src="" alt="Vimeo" className="w-6" /></a>
-                        <a href=""><img src="" alt="YouTube" className="w-6" /></a>
-                        <a href=""><img src="" alt="Instagram" className="w-6" /></a>
+                        <a href=""><img src={Face}  className="w-6" /></a>
+                        <a href=""><img src={Insta}  className="w-6" /></a>
+                        <a href=""><img src={linkedin}  className="w-6" /></a>
+                        <a href=""><img src={YT}  className="w-6" /></a>
                     </div>
                 </div>
             </div>

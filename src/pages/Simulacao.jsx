@@ -28,7 +28,6 @@ function Simulacao() {
         setResultado(null);
       }
     } catch (error) {
-      // Log detalhado do erro
       console.error('Erro no cálculo:', error.response ? error.response.data : error.message);
       setErro("Erro ao calcular o valor.");
       setResultado(null);

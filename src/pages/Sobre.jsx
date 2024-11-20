@@ -35,6 +35,7 @@ export default function Sobre({texto, imagem}) {
                     imagem="../../public/Imagens/Joao-ia.jpg"
                     nome="João Vitor Carotta Ribeiro"
                     funcao="Desenvolvedor Back-end"
+                    linkedin1=""
                 />
                 <Time 
                     imagem="../../public/Imagens/Diego-ia.jpg"

@@ -1,4 +1,4 @@
-export default function Time({ imagem, nome, funcao }) {
+export default function Time({ imagem, nome, funcao}) {
     return (
         <>
             <div className="flex flex-col items-center justify-center text-center pb-10">
