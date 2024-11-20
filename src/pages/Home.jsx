@@ -17,7 +17,7 @@ export default function Home({ titulo, subtitulo }) {
                 <ContainerHome
                     titulo1="Conhecimento"
                     texto1="Trazer conhecimento sobre as energias limpas ao nossos clientes é nossa prioridade, clique aqui e saiba mais!"
-                    imagem1="/Imagens/img-missoes2.jpg"
+                    imagem1="/Imagens/Img-missoes2.jpg"
                     titulo2="Inovações Tecnológicas"
                     texto2="Com os avanços tecnológicos, podemos melhorar cada vez mais a produção de energia limpa, clique aqui e saiba mais sobre o assunto!"
                     imagem2="/Imagens/img-missoes3.png"

@@ -12,7 +12,7 @@ export default function Conhecimento() {
     const texto2 = "Com os avanços tecnológicos, a produção de energia limpa tem se tornado cada vez mais eficiente e acessível. Energias limpas, como solar, eólica e hidráulica, são obtidas de fontes renováveis que têm baixo impacto ambiental e contribuem significativamente para a redução das emissões de gases de efeito estufa. A tecnologia desempenha um papel essencial nesse progresso, permitindo o desenvolvimento de painéis solares mais eficientes, turbinas eólicas mais potentes e sistemas de armazenamento de energia mais duráveis. Essas inovações tornam as energias limpas mais viáveis para atender à crescente demanda global por eletricidade de forma sustentável. Investir em energia limpa é um passo crucial para combater as mudanças climáticas e construir um futuro mais sustentável. Além de proteger o meio ambiente, essas soluções impulsionam o crescimento econômico, criam empregos e melhoram a qualidade de vida."
 
     const tituloMissoes = id === "1" ? "Conhecimento" : "Inovações tecnológicas";
-    const imagensMissoes = id === "1" ? "/Imagens/img-missoes2.jpg" : "/Imagens/img-missoes3.png";
+    const imagensMissoes = id === "1" ? "/Imagens/Img-missoes2.jpg" : "/Imagens/img-missoes3.png";
     const textoMissoes = id === "1" ? texto1 : texto2;
 
     return (
