@@ -7,7 +7,7 @@ import YouTube from '../../public/Imagens/YT-icon.png'
 
 export default function Footer() {
     return (
-        <footer className="bg-[#222222] text-white py-10 md:py-16">
+        <footer className="bg-[#222222] text-white py-10 md:py-28">
             <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left">
                 <div className="flex flex-col items-center md:items-start">
                     <img src={Econect} alt="Econnect Logo" className="w-32 md:w-48 mb-3" />
