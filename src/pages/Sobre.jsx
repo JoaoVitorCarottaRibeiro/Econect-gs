@@ -39,13 +39,13 @@ export default function Sobre({ texto, imagem }) {
                 <h1 className="text-center py-10 font-bold text-3xl text-[#44D764]">Time</h1>
                 <div className="flex flex-wrap items-center justify-center gap-10 md:gap-40 px-4">
                     <Time
-                        imagem="../../public/Imagens/Joao-ia.jpg"
+                        imagem="/Imagens/Joao-ia.jpg"
                         nome="João Vitor Carotta Ribeiro"
                         funcao="Desenvolvedor Back-end"
                         linkedin1=""
                     />
                     <Time
-                        imagem="../../public/Imagens/Diego-ia.jpg"
+                        imagem="/Imagens/Diego-ia.jpg"
                         nome="Diego Eleutério Fadul da Costa"
                         funcao="Desenvolvedor Front-end"
                     />
