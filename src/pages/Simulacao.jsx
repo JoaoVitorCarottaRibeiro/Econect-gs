@@ -37,7 +37,7 @@ function Simulacao() {
   return (
     <>
       <h1 className='text-3xl  py-10 text-center font-bold'>Previsão de Preço com Base no Consumo <span className='text-[#728678]'>(kW)</span></h1>
-      <div className='flex items-center justify-center gap-10'>
+      <div className='flex items-center justify-center gap-10 py-10'>
         <input
           className='w-[250px] border border-black rounded p-1'
           type="number"
